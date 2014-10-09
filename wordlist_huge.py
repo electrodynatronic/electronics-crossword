@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 word_list = ['coulomb', 'A fundamental unit of electrical charge, and is also the SI derived unit of electric charge (symbol: Q or q). It is equal to the charge of approximately 6.241×1018 electrons.'], \
     ['Ampere', 'A measure of the amount of electric charge passing a point in an electric circuit per unit time. 1 coulomb per second.'], \
     ['Watt', 'A joule per second.'], \
@@ -14,30 +16,15 @@ word_list = ['coulomb', 'A fundamental unit of electrical charge, and is also th
     ['transistor', 'A semiconductor device used to amplify and switch electronic signals and electrical power.'], \
     ['amplifier', 'An electronic device that increase the power of a signal.'], \
     ['inductance', 'he property of a conductor by which a change in current flowing through it "induces" (creates) a voltage (electromotive force) in both the conductor itself and in any nearby conductors.'], \
-    ['dopant','define dopant'], \
-    ['orbital','define orbital'], \
     ['Centigrus','A real unit for measuring temperature. Invented at WCJC by Blake Folmar.'], \
-    ['arduino','define arduino'], \
-    ['Atmel','define Atmel'], \
-    ['AVR','define AVR'], \
-    ['PIC','define PIC'], \
-    ['picaxe','define picaxe'], \
-    ['ARM','define ARM'], \
-    ['RISC','define RISC'], \
-    ['MIPS','define MIPS'], \
-    ['x86','define x86'], \
-    ['Intel','define Intel'], \
-    ['Fairchild','define Fairchild'], \
-    ['TI','define TI'], \
     ['logic','define logic'], \
     ['microprocessor','define microprocessor'], \
     ['microcontroller','define microcontroller'], \
     ['architecture','define architecture'], \
-    ['alu','define alu'], \
     ['register','define register'], \
     ['word','define word'], \
     ['bitmask','define bitmask'], \
-    ['variable','define variable'], \
+    ['variable','Programmers store things in these.'], \
     ['static','define static'], \
     ['dynamic','define dynamic'], \
     ['polar','define polar'], \
@@ -45,27 +32,20 @@ word_list = ['coulomb', 'A fundamental unit of electrical charge, and is also th
     ['type','define type'], \
     ['compiler','define compiler'], \
     ['assembler','define assembler'], \
-    ['opcode','define opcode'], \
-    ['memory','define memory'], \
-    ['PLC','define PLC'], \
-    ['relay','define relay'], \
-    ['SSR','define SSR'], \
-    ['diac','define diac'], \
-    ['IGBT','define IGBT'], \
-    ['macro','define macro'], \
-    ['ASCII','define ASCII'], \
-    ['unicode','define unicode'], \
-    ['encode','define encode'], \
-    ['protocol','define protocol'], \
-    ['circuit','define circuit'], \
-    ['PCB','define PCB'], \
-    ['transformer','define transformer'], \
-    ['flux','define flux'], \
-    ['lumen','define lumen'], \
-    ['proportional','define proportional'], \
-    ['Hitachi','define Hitachi'], \
-    ['decibel','define decibel'], \
-    ['bel','define bel'], \
+    ['opcode',' the portion of a machine language instruction that specifies the operation to be performed'], \
+    ['memory','refers to the physical devices used to store programs or data on a temporary or permanent basis for use in a computer or other digital electronic device'], \
+    ['PLC','a digital computer used for automation of typically industrial electromechanical processes'], \
+    ['relay','an electrical device that is activated by a current or signal in one circuit to open or close another circuit'], \
+    ['SSR','an electronic switching device that switches conduction states when a small external voltage is applied along its n-type and p-type junctions'], \
+    ['diac','a diode that conducts current only after its breakover voltage has been reached momentarily'], \
+    ['IGBT','a three-terminal power semiconductor device primarily used as an electronic switch'], \
+    ['macro','a set of instructions that is represented in an abbreviated format'], \
+    ['ASCII','a character-encoding scheme originally based on the English alphabet that encodes 128 specified characters'], \
+    ['unicode','an international encoding standard for use with different languages and scripts, by which each letter, digit, or symbol is assigned a unique numeric value that applies across different platforms and programs'], \
+    ['encode','to convert information or an instruction into a particular form'], \
+    ['protocol','a system of digital rules for data exchange within or between computers'], \
+    ['PCB','mechanically supports and electrically connects electronic components using conductive tracks, pads and other features etched from copper sheets laminated onto a non-conductive substrate'], \
+    ['transformer','an electrical device that transfers energy between two or more circuits through electromagnetic induction'], \
     ['encrypt','The process of encoding messages or information in such a way that only authorized parties can read it.'], \
     ['ethernet','IEEE 802.3, RJ-45, Gigabit, etc.'], \
     ['antenna','A transducer for sending or receiving waves.'], \
@@ -124,15 +104,15 @@ word_list = ['coulomb', 'A fundamental unit of electrical charge, and is also th
     ['Actel','FPGA Manufacturer.'], \
     ['Altera','FPGA Manufacturer.'], \
     ['Xilinx','FPGA Manufacturer.'], \
-    ['RaspberryPi','Small $35.00 computer.'], \
-    ['Android','Paranoid _______'], \
+    ['RaspberryPi','Small $35.00 computer. For hobbyists and education.'], \
+    ['Android','Paranoid _______. (Radiohead)'], \
     ['Fahrenheit','A temperature scale based on one proposed in 1724 by the German physicist, after whom the scale is named.'], \
     ['Celcius','A scale and unit of measurement for temperature with 0 degrees as the freezing point of water.'], \
     ['Centigrade','A scale and unit of measurement for temperature with 0 degrees as the freezing point of water.'], \
     ['Kelvin','An absolute, thermodynamic temperature scale using as its null point absolute zero.'], \
     ['Oersted','Danish physicist who discovered that a steady electric current creates a magnetic field around it.'], \
-    ['FCC','Spectrum regulator.']
-    ['National', 'American semiconductor manufacturer which specialized in analog devices and subsystems'], \ #also mention Bob Pease
+    ['FCC','Spectrum regulator.'], \
+    ['National', 'American semiconductor manufacturer which specialized in analog devices and subsystems. Employer of Bob Pease.'], \
     ['semiconductor', 'A substance that has conductivity between an insulator and most metals'], \
     ['germanium', 'Atomic number 32'], \
     ['Linux', 'A Unix-like and mostly POSIX-compliant computer operating system'], \
@@ -151,18 +131,18 @@ word_list = ['coulomb', 'A fundamental unit of electrical charge, and is also th
     ['sawtooth', 'a non sine wave that resembles the teeth of a saw'], \
     ['sine', 'A waveform that is curvy'], \
     ['waveform', 'T representation of a signal as a plot of amplitude versus time'], \
-    ['current', 'The flow of electric charge'] \
-    ['Kirchhoff', 'Inventor of current and voltage law'] \
-    ['Faraday', 'The si unit of capacitance is named after him'] \
-    ['farad', 'si unit of capacitance'] \
-    ['Norton', 'developed nortons theorem'] \
-    ['Thevenin', 'developed Thevenins theorem'] \
-    ['cable', 'Two or more wires side by side'] \
-    ['coaxial', 'A cable with a center conductor, insulation, wire braid around that, and more insulation'] \
-    ['Ohm', 'Unit of resistance'] \
-    ['DMM', 'A typically handheld electronic measurement device.'] \
-    ['silicon', 'The basis for most semiconductors.'] \
-    ['Tesla', 'The wickedest electrical genius evar.'], \
+    ['current', 'The flow of electric charge'], \
+    ['Kirchhoff', 'Inventor of current and voltage law'], \
+    ['Faraday', 'The si unit of capacitance is named after him'], \
+    ['farad', 'si unit of capacitance'], \
+    ['Norton', 'developed nortons theorem'], \
+    ['Thevenin', 'developed Thevenins theorem'], \
+    ['cable', 'Two or more wires side by side'], \
+    ['coaxial', 'A cable with a center conductor, insulation, wire braid around that, and more insulation'], \
+    ['Ohm', 'Unit of resistance.'], \
+    ['DMM', 'A typically handheld electronic measurement device.'], \
+    ['silicon', 'The basis for most semiconductors.'], \
+    ['Tesla', 'The wickedest electrical genius ever.'], \
     ['Gauss', 'is the cgs unit of measurement of a magnetic field'], \
     ['Plot', 'is a graph of the transfer function of a linear, time-invariant system versus frequency'], \
     ['Data', 'the quantities, characters, or symbols on which operations are performed by a computer, being stored and transmitted in the form of electrical signals and recorded on magnetic, optical, or mechanical recording media'], \
@@ -170,38 +150,38 @@ word_list = ['coulomb', 'A fundamental unit of electrical charge, and is also th
     ['Maxwell', 'a unit of magnetic flux in the centimeter-gram-second system, equal to that induced through one square centimeter by a perpendicular magnetic field of one gauss'], \
     ['Feedback', 'the return to the input of a part of the output of a machine, system, or process'], \
     ['Feedforward' , 'an element or pathway within a control system which passes a controlling signal from a source in its external environment, often a command signal from an external operator, to a load elsewhere in its external environment'], \
-    ['PID', 'a proportional-intergral-dervative controller is a control loop feedback machanism'], \
-    ['Lucent', 'glowing with or giving off light'], \
-    ['BellLabs', 'is the research and development subsidiary of Alcatel Lucent'], \
-    ['Alcatel', 'is a french global telecommunications equipment company'], \
-    ['HP', 'Hewlett Packard is an American multinational information technology corporation which provides hardware, software and services to everyone'], \
-    ['HewlettPackard', 'Hewlett-Packard Company or HP is an American multinational information technology corporation'], \
-    ['Agilent', 'is an American company that designs and manufactures electronic and bio-analytical measurement instruments and equipment for measurement and evaluation'], \
-    ['triac', 'an electronic component that can conduct current in either direction when it is triggered '], \
-    ['FET', 'a transistor that uses an electric field to control the shape and hence the conductivity of a channel of one type of charge carrier in a semiconductor material.'],\
-    ['MOSFET', 'a type of transistor used for amplifying or switching electronic signals.'], \
-    ['NPN', 'NPN is one of the two types of bipolar transistors, consisting of a layer of P-doped semiconductor between two N-doped layers.'],\
-    ['PNP', 'The other type of BJT is the PNP, consisting of a layer of N-doped semiconductor between two layers of P-doped material.'],\
-    ['spectrum', 'a condition that is not limited to a specific set of values but can vary infinitely within a continuum. '],\
+    ['PID', 'A popular control algorithm.'], \
+    ['Lucent', 'Another name for Bell Labs.'], \
+    ['BellLabs', 'Defunct research and development subsidiary of AT&T.'], \
+    ['Alcatel', 'A french global telecommunications equipment company. Purchaser of Bell Labs.'], \
+    ['HP', 'Agilent predecessor. Company started in a garage.'], \
+    ['HewlettPackard', 'Agilent predecessor. Company started in a garage.'], \
+    ['Agilent', 'Successor to HP.'], \
+    ['triac', 'An electronic component that can conduct current in either direction when it is triggered '], \
+    ['FET', 'A type of transistor.'],\
+    ['MOSFET', 'A type of transistor.'], \
+    ['NPN', 'One type of BJT.'],\
+    ['PNP', 'One type of BJT.'],\
+    ['spectrum', 'A condition that is not limited to a specific set of values but can vary infinitely within a continuum. '],\
     ['spectra', 'conditions or values that vary over a continuum.'], \
-    ['Fourier', 'a French mathematician and physicist best known for initiating the investigation of Fourier series and their applications to problems of heat transfer and vibrations.'],\
-    ['potentiometer', 'a pot, is a three-terminal resistor with a sliding or rotating contact that forms an adjustable voltage divider.'],\
+    ['Fourier', 'French mathematician and physicist interested in heat transfer and vibrations.'],\
+    ['potentiometer', 'A three-terminal adjustable resistor.'],\
     ['digital', 'signals by discrete bands of analog levels, rather than by a continuous range.'], \
     ['analog', 'electronic systems with a continuously variable signal, in contrast to digital electronics where signals usually take only two different levels.'],\
     ['gain', 'a measure of the ability of a circuit to increase the power or amplitude of a signal from the input to the output by adding energy converted from some power supply to the signal.'],\
     ['bridge', 'a type of electrical circuit in which two circuit branches are "bridged" by a third branch connected between the first two branches at some intermediate point along them. '],\
-    ['rectifier', 'A rectifier is an electrical device that converts alternating current (AC), which periodically reverses direction, to direct current , which flows in only one direction.'],\
+    ['rectifier', 'AC -> DC.'],\
     ['microprocessor', 'Incorporates the functions of a computer central processing unit (CPU) on a single integrated circuit (IC).'], \
-    ['microcontroller', ' is a small computer on a single integrated circuit containing a processor core, memory, and programmable input/output peripherals.']
+    ['microcontroller', ' is a small computer on a single integrated circuit containing a processor core, memory, and programmable input/output peripherals.'], \
     ['architecture', 'refers to the identification of a systems physical components and their interrelationships'], \
-    ['ALU or Arithmetic Logic Unit', 'Is a digital circuit that performs integer arithmetic and logical operations.'], \
+    ['ALU', 'Is a digital circuit that performs integer arithmetic and logical operations.'], \
     ['Register', 'Are data storage devices that are more sophisticated than latches. Is a group of binary cells suitable for holding binary information.'], \
     ['Word', 'Is basically a fixed-sized group of digits (binary or decimal) that are handled as a unit by the instruction set or the hardware of the processor.'], \
     ['Bitmask', 'Makes use of the fact that binary numbers are made up of 1s and 0s, each digit in a binary number being equivalent to one bit'], \
     ['Variable', 's a storage location and an associated symbolic name (an identifier) which contains some known or unknown quantity or information'], \
     ['Static', 'displayed when no transmission signal is obtained by the antenna receiver of television sets and other display devices.'], \
     ['Dynamic', ' Of data storage, processing, or programming affected by the passage of time or the presence or absence of power'], \
-    ['Data', 'a set of values of qualitative or quantitative variables; restated, pieces of data are individual pieces of Information'], \
+    ['Data', 'Information'], \
     ['Type', 'is a classification identifying one of various of data, such as real, integer or Boolean'], \
     ['Compiler', 'Source code written in a programming language (the source language) into another computer language (the target language, often having a binary form known as object code)'], \
     ['Assembler', 'is a program which creates object code by translating combinations of mnemonics and syntax for operations and addressing modes into their numerical equivalents.'], \
@@ -213,7 +193,7 @@ word_list = ['coulomb', 'A fundamental unit of electrical charge, and is also th
     ['logarithmic','Constructed so that successive points along an axis, or graduations that are an equal distance apart, represent values that are in an equal ratio'], \
     ['exponential',' Becoming more and more rapid'], \
     ['polynomial','An expression of more than two algebraic terms'], \
-    ['RMS','.707'], \
+    ['RMS','Multiplying a sine wave times 0.707 will get you the ___ Voltage.'], \
     ['Power','Energy that is produced by electrical means and used to operate a device'], \
     ['invert','To put in opposite arrangement'], \
     ['phase','The relationship in time between successive states or cycles'], \
@@ -224,7 +204,7 @@ word_list = ['coulomb', 'A fundamental unit of electrical charge, and is also th
     ['snubber', 'a device to suppress voltage transients in electrical systems'], \
     ['RAM', 'Daft Punk named an album after this kind of memory.'], \
     ['ROM', 'Memory that cannot form new memories.'], \
-    ['Flash', 'an electronic non-volatile computer storage medium that can be electrically erased and reprogrammed'] \
+    ['Flash', 'an electronic non-volatile computer storage medium that can be electrically erased and reprogrammed'], \
     ['serial', 'any medium issued in successive parts bearing numerical or chronological designation and intended to be continued indefinitely'], \
     ['USB', 'an industry standard that defines the cables, connectors and communication protocols used in a bus for connection, communication, and power supply between computers and electronic devices'], \
     ['IEEE', ' a professional association formed in 1963 from the amalgamation of the American Institute of Electrical Engineers and the Institute of Radio Engineers'], \
@@ -250,3 +230,29 @@ word_list = ['coulomb', 'A fundamental unit of electrical charge, and is also th
     ['byte', 'A unit of digital information in computing and telecommunications that most commonly consists of eight bits'], \
     ['diode', 'A two-terminal electronic component with asymmetric conductance; it has low (ideally zero) resistance to current in one direction, and high (ideally infinite) resistance in the other'], \
     ['LED', 'A two-lead semiconductor light source'], \
+    ['dopant',' a trace impurity element that alters electrical/optical properties'], \
+    ['orbital','actual\potential patterns of electron density represented as a wave function '], \
+    ['Centigrus',' A real unit of measure for temperature. Inventor: Blake Folmar.'], \
+    ['arduino',' Microcontroller developer kit named after a pub in Italy.'], \
+    ['Atmel',' Corporation was founded in 1984 by George Perlegos'], \
+    ['AVR',' modified Harvard architecture 8-bit RISC single chip micro controller. Arduino CPU.'], \
+    ['PIC', 'micro controller built to be used with General Instruments new CP1600 16-bit CPU. Microchip makes them.'], \
+    ['picaxe',' a UK-sourced micro controller system with chips made by Revolution Education. Popular with hobbyists. '], \
+    ['ARM',' a family of instruction set architectures for computer processors based on RISC developed by British company in 1985. Processors from 8bits to 64bits.'], \
+    ['RISC',' microprocessor with a CPU design strategy based on the insight that simplified instruction set'], \
+    ['MIPS',' microprocessor based on RISC, introduced in 1981'], \
+    ['x86',' a family of backward compatible instruction set architectures based on the Intel 8086 CPU.'], \
+    ['Intel','Semiconductor manufacturer. Robert Noyce, Gordon Moore, etc.'], \
+    ['Fairchild','Semiconductor company established by the traitorous eight, according to William Shockley'], \
+    ['TI',' company that designs and makes semiconductors, which it sells to electronics designers and manufacturers globally. Headquartered at Dallas, Texas, United States '], \
+    ['protocol','a set of rules governing the exchange or transmission of data between devices.'], \
+    ['cicuit',' a complete and closed path around which a circulating electric current can flow.'], \
+    ['PCB','mechanically supports and electrically connects electrical components using conductive tracks, pads and other features etched from copper sheets'], \
+    ['decibel',' A logarithmic unit used to express the ratio between power or intensity values'], \
+    ['transformer','Optimus Prime; or an electrical component that reduces or increases voltage of AC.'], \
+    ['bel','10 db.'],
+
+if(__name__=="__main__"):
+    for line in word_list:
+        print line
+
